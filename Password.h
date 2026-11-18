@@ -8,17 +8,21 @@ using std::string;
 class Password
 {
 private:
-  
+
 
 public:
   /*
-  The function receives a string and counts how many times the same character 
+  The function receives a string and counts how many times the same character
   occurs at the beginning of the string, before any other characters (or the
   end of the string). The function is case-sensitive so 'Z' is different than
   'z' and any ASCII characters are allowed.
   */
   int count_leading_characters(string word);
-  
+
+  /*
+  */
+  bool contains_unicode(string pass);
+
 
   /*
   receives a string and returns whether it has both at least one upper-case

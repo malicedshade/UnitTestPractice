@@ -21,6 +21,15 @@ int Password::count_leading_characters(string phrase){
   return repetition;
 }
 
+bool Password::contains_unicode(string pass)
+{
+    for (unsigned char c : pass) {
+        if (c > 127) return true;
+    }
+
+    return false;
+}
+
 /*
   receives a string and returns whether it has both at least one upper-case
   letter and at least one lower-case letter
